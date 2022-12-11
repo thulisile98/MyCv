@@ -1,0 +1,74 @@
+
+.navbar 
+{
+width: 270;
+ background: var(--bg-black-100);
+display: block;
+position: fixed;
+left: 0;
+top: 0%;
+padding: 30;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 10;
+
+}
+
+.nav-item
+{
+    .nav-link{
+        color: rgb(141, 8, 97);
+        font: 1em sans-serif;
+    }
+   
+
+
+}
+.offcanvas-body
+{
+background-color:rgb(15, 15, 15);
+font-size: large;
+font-weight: bold;
+text-decoration-color: antiquewhite;
+font-style: normal;
+
+
+}
+
+.navbar 
+{
+position: sticky;
+    top: 0;
+    display: flex;
+    list-style-type: none;
+    background-color: #aaa9aa;
+    width: 100%;
+
+}
+
+
+.nav-link
+{
+    color: rgb(218, 216, 216);
+    font-size: larger;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-weight: 300;
+    
+}
+.navbar-nav{
+    color: rgb(134, 21, 55);
+    text-decoration-color: aqua;
+}
+
+.carousel-caption
+{
+  
+    top: 200px;
+    bottom: 280px;
+}
+    
+
