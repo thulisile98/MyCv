@@ -10,6 +10,11 @@ const routes: Routes = [
 
   {
     path: '',
+    redirectTo: 'PersonalDetails',
+    pathMatch: 'full'
+  },
+  {
+    path: 'PersonalDetails',
     component: PersonalDetailsComponent
   },
   {

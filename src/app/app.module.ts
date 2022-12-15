@@ -20,7 +20,9 @@ import { CertificatesComponent } from './certificates/certificates.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
