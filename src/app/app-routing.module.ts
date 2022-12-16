@@ -2,7 +2,7 @@ import { PersonalDetailsComponent } from './personal-details/personal-details.co
 import { NgModule, Component } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
-import { CertificatesComponent } from './certificates/certificates.component';
+import { CertificatesComponent } from './cv/certificates.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 

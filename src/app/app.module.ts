@@ -7,7 +7,7 @@ import { PersonalDetailsComponent } from './personal-details/personal-details.co
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactsComponent } from './contacts/contacts.component';
-import { CertificatesComponent } from './certificates/certificates.component';
+import { CertificatesComponent } from './cv/certificates.component';
 
 @NgModule({
   declarations: [

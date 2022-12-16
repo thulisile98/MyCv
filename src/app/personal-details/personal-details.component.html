@@ -13,15 +13,14 @@
       <span class="navbar-toggler-icon"></span>
     </button> -->
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page"  routerLink="#">Home</a>
+        <a class="nav-link active" aria-current="page"  routerLink="/PersonalDetails">Home</a>
         <a class="nav-link active" aria-current="page" routerLink="/About">About</a>
+        <a class="nav-link  active" aria-current="page"routerLink="/Certificates">Cv</a>
         <a class="nav-link active" aria-current="page"routerLink="/Portfolio">Portfolio</a>
-        <a class="nav-link  active" aria-current="page"routerLink="/Certificates">Certificates</a>
         <a class="nav-link active"aria-current="page" routerLink="/Contacts">Contacts</a>
       </div>
   </div>
 </nav>
-
 <body class="p-3 m-0 border-0 bd-example">
   
 
@@ -35,12 +34,18 @@
           src="https://www.designmadeingermany.de/2013/wp-content/uploads/2014/05/2437c225afb41ca2c6cf768c24a10da3.png"
           class="d-block w-100" alt="...">
 
-        <div class="carousel-caption d-none d-md-block justify-center">
+        <div class="carousel-caption d-none d-md-block ">
 
           <h5 class="caption">Hey, my name is</h5>
           <h1 class="name"> Margret Mashego</h1> 
-          <h2>and I'm a Developer</h2>
-            <a href="#" class="btn btn-secondary">Download Cv</a>
+          <div class="wrapper">
+         <div class="static-txt">I'm a</div>
+        <ul class="dynamic-txts">
+      <li><span>Designer</span></li>
+      <li><span>Developer</span></li>
+    </ul>
+     </div>
+            <a routerLink=""class="btn btn-secondary">Download Cv</a>
         </div>
       </div>
 
