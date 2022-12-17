@@ -5,12 +5,13 @@ import { AboutComponent } from './about/about.component';
 import { CertificatesComponent } from './cv/certificates.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { UserLocationComponent } from './user-location/user-location.component';
 
 const routes: Routes = [
 
   {
     path: '',
-    redirectTo: 'PersonalDetails',
+    redirectTo: 'UserLocation',
     pathMatch: 'full'
   },
   {
@@ -33,6 +34,11 @@ const routes: Routes = [
     path: 'Portfolio',
     component: PortfolioComponent
   },
+  {
+    path: 'UserLocation',
+    component: UserLocationComponent
+  },
+
 
 ];
 
