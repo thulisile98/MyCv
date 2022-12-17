@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { CertificatesComponent } from './cv/certificates.component';
+import { UserLocationComponent } from './user-location/user-location.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CertificatesComponent } from './cv/certificates.component';
     AboutComponent,
     PortfolioComponent,
     ContactsComponent,
-    CertificatesComponent
+    CertificatesComponent,
+    UserLocationComponent
   ],
   imports: [
     BrowserModule,
