@@ -1,4 +1,6 @@
+
 import { Component, OnInit } from '@angular/core';
+import { WeatherService } from '../weather.service';
 
 declare const L: any;
 declare const mapboxgl: any;
@@ -8,12 +10,21 @@ declare const mapboxgl: any;
   styleUrls: ['./user-location.component.scss']
 })
 export class UserLocationComponent implements OnInit {
+  public weather: any;
+  lat: any;
+  lon: any;
+  date: Date | undefined;
+  constructor(private WeatherService: WeatherService) { }
   ngOnInit() {
+    this.getWeatherData();
     if (navigator.geolocation) {
       console.log('location is not supported');
     }
     navigator.geolocation.getCurrentPosition((position) => {
       const coords = position.coords;
+      this.lat = position.coords.latitude;
+      this.lon = position.coords.longitude;
+
       console.log(
         `lat: ${position.coords.latitude}, lon: ${position.coords.longitude}`
       );
@@ -29,9 +40,40 @@ export class UserLocationComponent implements OnInit {
       });
 
       const marker = new mapboxgl.Marker().setLngLat([position.coords.longitude, position.coords.latitude]).addTo(map);
+
+      this.getWeatherData();
     });
 
   }
+
+
+  getWeatherData() {
+    this.WeatherService.getWeatherData(this.lat, this.lon).subscribe((Response) => {
+      this.weather = Response;
+      console.log(this.weather);
+      this.date = new Date(this.weather.dt * 1000);
+      console.log(this.date);
+
+
+    });
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   watchPosition() {
     let deslat = 0;
