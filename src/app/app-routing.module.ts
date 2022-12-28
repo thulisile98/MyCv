@@ -11,7 +11,7 @@ const routes: Routes = [
 
   {
     path: '',
-    redirectTo: 'UserLocation',
+    redirectTo: 'PersonalDetails',
     pathMatch: 'full'
   },
   {

@@ -1,11 +1,15 @@
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Font Awesome Kit -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script> 
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light nav-fill">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-fill">
   <div class="container-fluid">
     <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button> -->
-      <div class="navbar-nav">
+      <div class="navbar-nav mb-0 h4">
         <a class="nav-link active" aria-current="page"  routerLink="/PersonalDetails">Home</a>
         <a class="nav-link active" aria-current="page" routerLink="/About">About</a>
         <a class="nav-link  active" aria-current="page"routerLink="/Certificates">Cv</a>
@@ -14,3 +18,46 @@
       </div>
   </div>
 </nav>
+
+<div class="container">
+   <div class="contact-parent">
+      <div class="contact-child child1">
+         <p>
+            <i class='fas fa-map-marker fa-3x'></i> Address <br />
+            <!-- <i class='fas fa-map-marker'> fa-map-marker</i> -->
+            <span> Stand No 61
+            <br />
+            Moteti 0477
+            </span>
+         </p>
+         <p>
+            <i class="fas fa-phone-alt"></i> Call me <br />
+            <span> 0726874771</span>
+         </p>
+         <p>
+            <i class=" far fa-envelope"></i> Email <br />
+            <span>thulisile.ma98@gmail.com</span>
+         </p>
+      </div>
+      <div class="contact-child child2">
+         <div class="inside-contact">
+            <h2>Contact Me</h2>
+
+            <p>Name *</p>
+            <input id="txt_name" type="text" Required="required">
+            <p>Email *</p>
+            <input id="txt_email" type="text" Required="required">
+            <p>Phone *</p>
+            <input id="txt_phone" type="text" Required="required">
+            <p>Subject *</p>
+            <input id="txt_subject" type="text" Required="required">
+            <p>Message *</p>
+            <textarea id="txt_message" rows="4" cols="20" Required="required" ></textarea>
+            
+            <div class="d-grid gap-2">
+            <a routerLink=""class="btn">SEND</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

@@ -6,6 +6,7 @@
 
 .card-title{
    font-size: larger;
+   font-weight: 600;
    font-family: Verdana;
   font-weight: bolder;
     color:rgb(131, 32, 78) ;
@@ -18,4 +19,12 @@
 .card-text2{
 
     color: white;
+}
+
+.btn{
+    font-weight: 600;
+  border-color: rgb(141, 8, 97);
+  background-color:rgb(141, 8, 97);
+  color:white;
+
 }

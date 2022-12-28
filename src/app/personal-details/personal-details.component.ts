@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-personal-details',
   templateUrl: './personal-details.component.html',
@@ -8,7 +10,10 @@ import { Component } from '@angular/core';
 export class PersonalDetailsComponent {
 
   constructor() { }
+  ngOnInit() {
 
+  }
 
 
 }
+
