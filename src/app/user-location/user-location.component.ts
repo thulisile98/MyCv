@@ -52,12 +52,16 @@ export class UserLocationComponent implements OnInit {
       this.weather = Response;
       console.log(this.weather);
       this.date = new Date(this.weather.dt * 1000);
+
+
       console.log(this.date);
 
 
     });
 
   }
+
+
 
 
 

@@ -1,15 +1,62 @@
-#map{
-    height: 80vh;
-    width: 80vh;
-}
+// #map{
+//     height: 180vh;
+//     width: 280vh;
+// }
 
-.name{
-    font-size: larger;
-    color: rgb(190, 47, 159);
-
-}
 .weatherData
 {
     width: -20vh;
     height: 100vh;
+}
+.description
+{font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.city{
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+text-align: center;
+}
+
+.date{
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+text-align: center;
+
+}
+.humidity{
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+.percipitation{
+    font-weight: 500;
+     font: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+color: rgb(0, 0, 0);
+text-align: center;
+
+}
+.pressure{
+     font-weight: 500;
+     font: bolder;
+   font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+   color: rgb(0, 0, 0);
+   
+
+}
+.card{
+background-image: image("http://d2uqfpnktc64mn.cloudfront.net/uploads/competition/image/000/000/151/Beautiful-Weather2.jpg");
 }
