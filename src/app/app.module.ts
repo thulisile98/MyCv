@@ -9,6 +9,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { CertificatesComponent } from './cv/certificates.component';
 import { UserLocationComponent } from './user-location/user-location.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -18,16 +20,20 @@ import { UserLocationComponent } from './user-location/user-location.component';
     PortfolioComponent,
     ContactsComponent,
     CertificatesComponent,
-    UserLocationComponent
+    UserLocationComponent,
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
 
 
   ],
   providers: [],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }

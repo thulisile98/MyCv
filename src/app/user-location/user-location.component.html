@@ -9,57 +9,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
-    <!-- <div class="card" style="width:100%;">
-      <div class="card-body">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-fill">
-          <div class="container-fluid">
     
-      <div class="navbar-nav mb-0 h4">
-        <a class="nav-link active" aria-current="page"  routerLink="/PersonalDetails">Home</a>
-        <a class="nav-link active" aria-current="page" routerLink="/About">About</a>
-        <a class="nav-link  active" aria-current="page"routerLink="/Certificates">Cv</a>
-        <a class="nav-link active" aria-current="page"routerLink="/Portfolio">Portfolio</a>
-        <a class="nav-link active"aria-current="page" routerLink="/Contacts">Contacts</a>
-        <a class='fas fa-map-marked-alt' routerLink="/UserLocation" style='font-size:48px;color:rgb(196, 47, 151)'></a>
-      </div>
-  </div>
-</nav>
-
-<div>
-      <div class="card-body">
-<div *ngIf="weather" class="weatherData">
-  <span class="city"> {{weather.name}},  {{weather.sys.country}}</span>
-  <br>
-   
-  <span class="date">{{date | date :'yyyy-MMMM-dd:HH:mm'}}</span><br>
-  <div class="icon">
-      <img src="http://openweathermap.org/img/wn/{{weather.weather[0].icon}}@2x.png"  alt="">
-    </div>
-    <span class="description">{{weather.weather[0].description}}</span>
-
- <br>
-<span class="humidity"><a>humidity</a>{{weather.main.humidity}}%</span>
-<br>
-<span class="pressure"><a>pressure</a>{{weather.main.humidity}}hpa</span><br>
- </div>
-</div>
-    </div> 
-
-
-    <div class="row g-0">
-    <div class="col-md-4">
-      <div id="map"></div>
-    </div>
- </div>
-  </div> -->
 
 
 
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-fill">
           <div class="container-fluid">
-    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
+   
       <div class="navbar-nav mb-0 h4">
         <a class="nav-link active" aria-current="page"  routerLink="/PersonalDetails">Home</a>
         <a class="nav-link active" aria-current="page" routerLink="/About">About</a>
@@ -83,7 +39,7 @@
   <span class="date">{{date | date :'yyyy-MMMM-dd    HH:mm'}}</span><br>
  
   <div class="icon">
-      <img src="http://openweathermap.org/img/wn/{{weather.weather[0].icon}}@4x.png"  alt=""><img src="http://openweathermap.org/img/wn/{{weather.weather[0].icon}}@4x.png"  alt="">
+<img src="http://openweathermap.org/img/wn/{{weather.weather[0].icon}}@4x.png"  alt=""><img src="http://openweathermap.org/img/wn/{{weather.weather[0].icon}}@4x.png"  alt="">
     </div>
     <span class="description">{{weather.weather[0].description}}</span>
 
