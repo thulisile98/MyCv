@@ -24,9 +24,9 @@
               "zone.js"
             ],
             "styles": [
-  "src/styles.scss",
-  "node_modules/bootstrap/dist/css/bootstrap.min.css"
-],
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -43,6 +43,12 @@
           },
           "configurations": {
             "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
               "budgets": [
                 {
                   "type": "initial",
@@ -57,6 +63,34 @@
               ],
               "outputHashing": "all"
             },
+             "staging": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.staging.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "3mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "50kb",
+                  "maximumError": "100kb"
+                }
+              ]
+            },
+
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -66,7 +100,7 @@
               "namedChunks": true
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": ""
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
