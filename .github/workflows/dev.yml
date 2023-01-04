@@ -1,0 +1,14 @@
+runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-node@master
+      with:
+        node-version: '12.x'
+    - run: npm install
+    - run: npm run build:staging
+    - uses: w9jds/firebase-action@master
+      with:
+        args: deploy --only hosting:web-cv-25a25 --project web-cv-25a25
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
