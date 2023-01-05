@@ -19,7 +19,7 @@ jobs:
       with:
         node-version: '12.x'
     - run: npm install
-    - run: npm run build
+    - run: npm run build:staging
     - uses: w9jds/firebase-action@master
       with:
         args: deploy --only hosting:web-cv-25a25 --project web-cv-25a25
